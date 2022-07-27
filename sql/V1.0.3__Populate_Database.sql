@@ -3,7 +3,7 @@
 
 -- Populate Individual table
 INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('214365D', 'Joe Blogs', '03/11/1980', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');
-INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('45986231', 'Jim Smith', '16/5/1952', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');
+INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('45986231', 'Jim Smith', '16/5/1982', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');
 INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('FG4557H', 'All User', '07/11/1976', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');
 INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('3WGH5667', 'Bob Blogs', '29/11/1989', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');
 INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('AL1435DT', 'User One', '30/12/1967', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');

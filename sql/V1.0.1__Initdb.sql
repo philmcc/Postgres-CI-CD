@@ -1,2 +1,2 @@
-## Create initial DB
+CREATE TABLE TEST1 as (ID SERIAL, details TEXT);
 

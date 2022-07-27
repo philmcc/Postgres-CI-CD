@@ -1,2 +1,0 @@
-CREATE TABLE TEST1 (ID SERIAL, details TEXT);
-

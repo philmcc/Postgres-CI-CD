@@ -1,3 +1,5 @@
+-- Generating test Data for the database.
+
 
 -- Populate Individual table
 INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('214365D', 'Joe Blogs', '03/11/1980', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');

@@ -1,6 +1,6 @@
 -- Generating test Data for the database.
 
-
+SET datestyle = "ISO, DMY";
 -- Populate Individual table
 INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('214365D', 'Joe Blogs', DATE '03/11/1980', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');
 INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('45986231', 'Jim Smith', DATE '16/05/1982', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');

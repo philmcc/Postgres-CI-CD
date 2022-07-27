@@ -2,16 +2,16 @@
 
 
 -- Populate Individual table
-INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('214365D', 'Joe Blogs', '03/11/1980', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');
-INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('45986231', 'Jim Smith', '16/05/1982', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');
-INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('FG4557H', 'All User', '07/11/1976', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');
-INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('3WGH5667', 'Bob Blogs', '29/11/1989', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');
-INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('AL1435DT', 'User One', '30/12/1967', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');
-INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('ABCDE134', 'User two', '30/12/1967', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');
-INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('123ABC', 'User Three', '30/12/1967', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');
-INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('09876ghk', 'User Four', '30/12/1967', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');
-INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('5436VDT44', 'User Five', '30/12/1967', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');
-INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('sdfgh4567', 'User Six', '30/12/1967', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');
+INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('214365D', 'Joe Blogs', DATE '03/11/1980', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');
+INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('45986231', 'Jim Smith', DATE '16/05/1982', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');
+INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('FG4557H', 'All User', DATE '07/11/1976', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');
+INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('3WGH5667', 'Bob Blogs', DATE '29/11/1989', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');
+INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('AL1435DT', 'User One', DATE '30/12/1967', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');
+INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('ABCDE134', 'User two', DATE '30/12/1967', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');
+INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('123ABC', 'User Three', DATE '30/12/1967', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');
+INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('09876ghk', 'User Four', DATE '30/12/1967', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');
+INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('5436VDT44', 'User Five', DATE '30/12/1967', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');
+INSERT INTO public.Individual(Document_Number, Full_Name, Date_of_Birth, Address, Email) VALUES ('sdfgh4567', 'User Six', DATE '30/12/1967', '1 Some Street, Some Town, SW1 8FG', 'email@email.com');
 
 -- Populate Tax_Payer_Id with new Individuals ignoring previously created Individuals
 INSERT INTO Tax_Payer_Id (Individual_ID) SELECT DISTINCT ID FROM Individual WHERE ID NOT IN (SELECT Individual_ID FROM Tax_Payer_Id WHERE Individual_ID is not null) ;
